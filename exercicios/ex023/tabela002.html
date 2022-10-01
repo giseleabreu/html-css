@@ -13,6 +13,7 @@
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
     }
 
     td, th{
@@ -23,6 +24,12 @@
     thead, tfoot{
         background-color: gray;
         color: white;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
     }
 
     td.num{
@@ -38,126 +45,131 @@
         border-top-right-radius: 10px;
     }
 
-        </style>
+    tbody > tr:nth-child(2n) {
+        background-color: lightgrey;
+        
+    }
+
+    </style>
 </head>
 <body>
   <h1>Tabelas grandes</h1>
     <table>
         <caption>População das Unidades Federativas</caption>
-        <thead> <!--Cabeça-->
-            <tr> <!--Linha-->
-                <th>Estado</th> <!--Dado-->
-                <th>População</th> <!--Dado-->
+        <thead> 
+            <tr> 
+                <th scope="col">Estado</th>  
+                <th scope="col" style="width:50px;">População</th> 
             </tr>
         </thead> 
-   <tbody> <!--Corpo-->
-            <tr> <!--Linha-->
-                <td>Acre</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+   <tbody> 
+            <tr> 
+                <td>Acre</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Alagoas</td> <!--Dado-->
+            <tr> 
+                <td>Alagoas</td>
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Amapá</td> <!--Dado-->
+            <tr> 
+                <td>Amapá</td> 
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Amazonas</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+            <tr> 
+                <td>Amazonas</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Bahia</td> <!--Dado-->
+            <tr> 
+                <td>Bahia</td> 
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Ceará</td> <!--Dado-->
+            <tr> 
+                <td>Ceará</td> 
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Distrito Federal</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+            <tr> 
+                <td>Distrito Federal</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Espirito Santo</td> <!--Dado-->
+            <tr> 
+                <td>Espirito Santo</td> 
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Goiás</td> <!--Dado-->
+            <tr> 
+                <td>Goiás</td> 
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Maranhão</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+            <tr> 
+                <td>Maranhão</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Mato Grosso</td> <!--Dado-->
+            <tr> 
+                <td>Mato Grosso</td> 
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Minas Gerais</td> <!--Dado-->
+            <tr> 
+                <td>Minas Gerais</td> 
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Pará</td> <!--Dado-->
+            <tr> 
+                <td>Pará</td>
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Paraíba</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+            <tr> 
+                <td>Paraíba</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Paraná</td> <!--Dado-->
+            <tr> 
+                <td>Paraná</td> 
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Pernambuco</td> <!--Dado-->
+            <tr> 
+                <td>Pernambuco</td>
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Piauí</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+            <tr> 
+                <td>Piauí</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Rio de Janeiro</td> <!--Dado-->
+            <tr> 
+                <td>Rio de Janeiro</td> 
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Rio Grande do Norte</td> <!--Dado-->
+            <tr> 
+                <td>Rio Grande do Norte</td> 
                 <td class="num">83 873 377</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Rio Grande do Sul</td> <!--Dado-->
-                <td class="num">44 169 350</td> <!--Dado-->
+            <tr> 
+                <td>Rio Grande do Sul</td> 
+                <td class="num">44 169 350</td> 
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Rondônia</td> <!--Dado-->
+            <tr> 
+                <td>Rondônia</td> 
                 <td class="num"> 64 738 737</td>
             </tr>
 
-            <tr> <!--Linha-->
-                <td>Roraima</td> <!--Dado-->
+            <tr> 
+                <td>Roraima</td> 
                 <td class="num">83 873 377</td>
             </tr>
 
@@ -183,14 +195,29 @@
 
     </tbody>
 
-    <tfoot> <!--Pé-->
+    <tfoot> 
             <tr>
-               <th>Total de habitantes</th> <!--Cabeçalho-->
-               <td class="num"><strong>210.898.983</strong></td> <!--Dado-->
+               <th scope="row">Total de habitantes</th> 
+               <td class="num"><strong>210.898.983</strong></td> 
                 
             </tr>
     </tfoot>
    </table>
-    
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio rem.  
+
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio 
+
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio 
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio 
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio 
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio 
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in aperiam distinctio magni, architecto explicabo soluta error exercitationem quos iste quia, vero natus adipisci eius voluptatem alias doloremque expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi dolor, unde, eum eveniet possimus a ipsum odio, mollitia tempore distinctio inventore repellat blanditiis qui vel porro ab. Vero, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta provident pariatur eum aut aliquid, ab asperiores, et molestias id nulla corporis, error commodi libero. Aliquam odit nulla quisquam veniam!Loremlo
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam fuga totam debitis! Cum omnis repudiandae neque, laudantium dignissimos asperiores, at commodi perspiciatis et consequuntur ex illo suscipit dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit error temporibus nam ad, aspernatur consectetur laborum nobis illum earum impedit debitis obcaecati mollitia esse, perferendis facere. Facilis, obcaecati quam. >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ea natus qui quidem voluptatibus blanditiis. Itaque deleniti laboriosam, rerum, porro aut maxime reiciendis eos labore praesentium, mollitia nemo odio 
 </body>
 </html>
